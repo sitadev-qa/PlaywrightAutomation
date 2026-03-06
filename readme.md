@@ -1,60 +1,120 @@
-Created a Playwright Project - 3-4 QA Persons
+Playwright Automation Project – Team Workflow
+Team Setup
+
+A Playwright automation project is created with 3–4 QA team members.
+
+Team Members:
 
 QA A
+
 QA B
+
 QA C
+
 QA D
 
-QA A - Advance Knowledge Automation
-Creating a Project - PlaywrightAutomation
+Role of QA A (Automation Lead)
 
-After a week - QA A is ready with the Framework
+QA A has advanced knowledge of automation.
 
-Will PUSH my all LOCAL CHANGES on SCM (Source Control Management) - GIT
+Step 1: Create Automation Project
 
+Project Name:
 
+PlaywrightAutomation
+Step 2: Build Automation Framework
+
+After 1 week, QA A prepares the complete automation framework.
+
+Pushing Code to Git (SCM)
+
+QA A pushes all local changes to Git Repository (SCM – Source Control Management).
+
+Git Configuration
 git config --global user.name "sitadev-qa"
 git config --global user.email vikas@stockholmitacademy.org
+Git Workflow
+Check Local Changes
+git status
+Move Files to Staging
+git add <filename>
+Commit Changes
+git commit -m "COMMIT MESSAGE"
+Push Code to Repository
+git push origin main
 
+After this step, the complete automation code is available in the Git repository.
 
-Complete Code is PUSHED - to GIT REPOSITORY
+QA B Workflow
+Step 1: Clone the Repository
 
-LOCAL CHANGES -----  git status
-STAGING CHANGES ---  git add <filename>
+QA B clones the Git repository to the local machine.
 
-PUSH CHANGES  ---- git commit -m "COMMIT MESSAGE" 
---- git push main origin
+Step 2: Work on Test Cases
 
-QA - B --> Working
+QA B works on 2 test cases.
 
-Clone the GIT REPO
-2 TCs - > 
-CREATE HIS OWN BRANCH -- JIRA929
-PULL REQUEST -- JIRA929 BRANCH--> main BRANCH - REVIEWER - REVIEW COMMENTS - QA-B - WORK ON REVIEW COMMENT - PULL REQUEST
-MERGE THE CODE
+Step 3: Create a Branch
 
+Branch name based on JIRA ticket.
 
-QA - C --> Working
-GIT PULL ORIGIN MAIN --> CREATE A NEW BRANCH
+Example:
 
+JIRA929
+Step 4: Pull Request Process
 
-QA-A
+Create Pull Request (PR)
+
+Source Branch → JIRA929
+
+Target Branch → main
+
+Reviewer reviews the code
+
+Reviewer adds review comments
+
+QA B fixes review comments
+
+QA B updates the PR
+
+Code gets merged into main branch
+
+QA C Workflow
+
+Pull latest code from main branch
+
+git pull origin main
+
+Create a new branch
+
+Start working on assigned tasks
+
+Common Branch Names in Projects
+
 master
+
 main
+
 develop
 
+Git Platforms Used in Industry
 
-BITBUCKET
-GITHUB
-GITLAB
-CIRCLE CI
-AZURE - GIT
+Bitbucket
 
+GitHub
 
-Assignment - 06th March 2026
+GitLab
 
-1. Create a FUNCTION in Javascript to print Random 5 Digit Number
-2. Create a FUNCTION in Javascript to print First 100 Numbers
-3. Create a FUNCTION in Javascript to print random US FORMAT MOBILE NUMBER
-4. Create a FUNCTION in Javascript to print first 20 Fibonacci Number
+CircleCI
 
+Azure Git
+
+Assignment – 06 March 2026
+1. Create a JavaScript function to print a random 5-digit number
+2. Create a JavaScript function to print first 100 numbers
+3. Create a JavaScript function to print random US format mobile number
+
+Example format:
+
++1-XXX-XXX-XXXX
+4. Create a JavaScript function to print first 20 Fibonacci numbers
