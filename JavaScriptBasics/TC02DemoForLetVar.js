@@ -29,6 +29,7 @@ let demo3 = () => {
 demo3()
 
 
+
 function getAreaOfRectangle1() //FUNCTION DECLARATION
 {
     let l = 5
