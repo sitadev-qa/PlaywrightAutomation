@@ -6,7 +6,7 @@ let arrayDemo = [100, 200, 300, 400, 500];
 // arrayDemo[2]
 // arrayDemo[3]
 // arrayDemo[4]
-
+let charArray = ['C','a']
 let arrayDemo1 = ["I am new to JS", "I am new to JAVA", "I am new to Playwright"];
 let arrayDemo2 = [1, "I am new to JS", true, 3.14]
 let browserList = ["chrome", "firefox", "edge", "safari"]
@@ -77,9 +77,11 @@ let userCreds = [
 ]
 
 userCreds.forEach((cred) => {
+    console.log(cred)
     if(cred.username === "user2")
     {
         console.log("Execute the test cases")
+        console.log(cred.username)
     }
     else
     {
