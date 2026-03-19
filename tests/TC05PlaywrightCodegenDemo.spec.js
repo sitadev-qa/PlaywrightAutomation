@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+// npx playwright codegen
+
 test('test', async ({ page }) => {
   await page.goto('https://www.ajio.com/');
   await page.getByRole('button', { name: 'Allow Location' }).click();

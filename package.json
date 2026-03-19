@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "runspecifictest": "npx playwright test tests/TC06PlaywrightLocator3.spec.js",
+    "runplaywright": "npx playwright test",
+    "runtestinchrome": "npx playwright test --browser chrome",
+    "runtestinfirefox": "npx playwright test --browser firefox",
+    "runtestinsafari": "npx playwright test --browser webkit",
+    "runtestinheaded": "npx playwright test --headed",
+    "runtestinparallel": "npx playwright test --workers=4",
+    "runtestwithreporter": "npx playwright test --reporter=html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

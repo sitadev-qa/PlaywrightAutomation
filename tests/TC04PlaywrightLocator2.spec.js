@@ -37,6 +37,7 @@ test('Playwright Locators - CSS', async ({ page }) => {
 
 
 })
+//Run the test case with title - Playwright Locators - CSS - 2 using npx command
 
 test('Playwright Locators - CSS - 2', async ({ page }) => {
 
