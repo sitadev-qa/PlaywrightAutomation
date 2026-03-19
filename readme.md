@@ -209,3 +209,13 @@ multiples of both with "TwoThree"
 Write a program to check whether a number is an Armstrong number.
 
 Write a program that counts how many vowels are present in a string using loops and conditions.
+
+
+Assignement - 19th March
+
+BASE URL - https://ecommerce-playground.lambdatest.io/
+
+1. Create a new account with valid email and password combination
+2. Login with same account
+3. Perform Forgot Password Scenario
+4. Add a Product and Perform a Checkout
