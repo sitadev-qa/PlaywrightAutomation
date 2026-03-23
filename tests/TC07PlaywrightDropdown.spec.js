@@ -14,9 +14,15 @@ test('Select Dropdown - Custom Select2', async ({ page }) => {
     await page.click('#select2-billing_country-container');
 
     // Type country name
-    await page.fill('.select2-search__field', 'India');
+    await page.fill('.select2-search__field', 'Iceland');
 
     // Select from dropdown list
-    await page.click('.select2-results__option >> text=India');
+    await page.click('.select2-results__option >> text=Iceland');
+
+
+    await page.waitForTimeout(10000);
+    // <select>
+
+    // </select>
 
 });
