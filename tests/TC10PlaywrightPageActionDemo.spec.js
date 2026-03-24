@@ -1,0 +1,16 @@
+import { pageActions } from "../utility/pageActions";
+
+test('TC10: Playwright Page Action Demo', async({page})=>{
+
+    const baseURL = "https://testautomationpractice.blogspot.com/";
+
+    const pg = new pageActions(page);
+
+    await page.goto(baseURL)
+
+    //Radio
+    await pg.check("#female");
+
+    await pg.fill("#name", "Test User");
+
+})
