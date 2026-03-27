@@ -11,7 +11,9 @@
     "runtestinsafari": "npx playwright test --browser webkit",
     "runtestinheaded": "npx playwright test --headed",
     "runtestinparallel": "npx playwright test --workers=4",
-    "runtestwithreporter": "npx playwright test --reporter=html"
+    "runtestwithreporter": "npx playwright test --reporter=html",
+    "runsmoketestcase":"npx playwright test --grep @smoke",
+    "runregressionexcludesmoke":"npx playwright test --grep @regression --grep-invert @smoke"
   },
   "keywords": [],
   "author": "",

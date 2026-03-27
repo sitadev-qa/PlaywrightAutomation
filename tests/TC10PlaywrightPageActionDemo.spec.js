@@ -1,4 +1,5 @@
 import { pageActions } from "../utility/pageActions";
+import {test} from "@playwright/test"
 
 test('TC10: Playwright Page Action Demo', async({page})=>{
 

@@ -219,3 +219,15 @@ BASE URL - https://ecommerce-playground.lambdatest.io/
 2. Login with same account
 3. Perform Forgot Password Scenario
 4. Add a Product and Perform a Checkout
+
+Playwright MCP Server - Start this Server
+
+-Agents
+-------
+
+Test Case Generation
+Test Plan
+Healing
+Running and Debugs - GREEN
+
+
