@@ -1,0 +1,77 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+  await page.getByRole('textbox', { name: 'Username' }).click();
+  await page.getByRole('textbox', { name: 'Username' }).fill('Admin');
+  await page.getByRole('textbox', { name: 'Username' }).press('Tab');
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('link', { name: 'Admin' }).click();
+  await page.getByText('Organization').click();
+  await page.getByRole('menuitem', { name: 'General Information' }).click();
+  await expect(page.locator('.oxd-switch-input')).toBeVisible();
+  await page.locator('.oxd-switch-input').click();
+  await page.getByRole('textbox').nth(2).click();
+  await page.getByRole('textbox').nth(2).fill('12345');
+  await page.getByRole('textbox').nth(3).click();
+  await page.getByRole('textbox').nth(3).fill('56789');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await expect(page.getByLabel('Sidepanel').locator('div').filter({ hasText: 'AdminPIMLeaveTimeRecruitmentMy' })).toBeVisible();
+  await page.getByLabel('Topbar Menu').getByText('Organization').click();
+
+  await page.locator('.oxd-switch-input').click();
+  await page.getByRole('textbox').nth(4).click();
+  await page.getByRole('textbox').nth(4).fill('3249309398');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await expect(page.getByText('Successfully Updated')).toBeVisible();
+
+
+  // Locations
+  await page.getByRole('listitem').filter({ hasText: /^Locations$/ }).click();
+  await page.getByRole('textbox').nth(1).click();
+  await page.getByRole('textbox').nth(1).fill('Canada');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByText('Info', { exact: true }).click();
+  await page.getByRole('textbox').nth(1).dblclick();
+  await page.getByRole('textbox').nth(1).fill('');
+  await page.locator('div').filter({ hasText: /^-- Select --$/ }).nth(2).click();
+  await page.getByRole('option', { name: 'Albania' }).click();
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByRole('button', { name: ' Add' }).click();
+  await page.getByRole('textbox', { name: 'Type here' }).first().click();
+  await page.getByRole('textbox', { name: 'Type here' }).first().fill('Demo');
+  await page.getByRole('textbox', { name: 'Type here' }).first().press('Tab');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(1).fill('Demo');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(1).press('Tab');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(2).fill('Demo');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(2).press('Tab');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(3).press('Tab');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(3).click();
+  await page.getByRole('textbox', { name: 'Type here' }).nth(3).fill('Demo');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(3).press('Tab');
+  await page.getByText('Afghanistan').click();
+  await page.getByRole('textbox', { name: 'Type here' }).nth(4).click();
+  await page.getByRole('textbox', { name: 'Type here' }).nth(4).fill('2140-1992999');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(4).press('Tab');
+  await page.getByRole('textbox', { name: 'Type here' }).nth(5).fill('3098');
+  await page.locator('textarea').first().click();
+  await page.locator('textarea').first().fill('danj');
+  await page.locator('textarea').first().press('Tab');
+  await page.locator('textarea').nth(1).click();
+  await page.locator('textarea').nth(1).fill('dsnnj');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await expect(page.getByText('Successfully Saved')).toBeVisible();
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewLocations');
+  await page.locator('div:nth-child(2) > .oxd-table-row > div:nth-child(7) > .oxd-table-cell-actions > button:nth-child(2)').click();
+  await page.locator('textarea').nth(1).click();
+  await page.locator('textarea').nth(1).fill('dsnnj dasjk');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewLocations');
+  await page.getByRole('button').filter({ hasText: /^$/ }).nth(5).click();
+  await page.getByRole('button', { name: ' Yes, Delete' }).click();
+  await expect(page.getByRole('button', { name: 'Reset' })).toBeVisible();
+  await page.getByRole('listitem').filter({ hasText: 'Organization' }).click();
+  await page.getByLabel('Topbar Menu').getByText('Organization').click();
+});

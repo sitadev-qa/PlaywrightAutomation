@@ -231,3 +231,13 @@ Healing
 Running and Debugs - GREEN
 
 
+Assignment - 27th March
+-----------------------
+Base URL - https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers
+
+Admin -
+
+-> User Management - Try for 10 TCs
+
+-> Organization - Try for 10 TCs.
+
