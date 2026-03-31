@@ -3,7 +3,7 @@ import { beforeEach } from "node:test";
 
 test.describe("Playwright Keyboard Test", ()=> {
 
-    beforeEach(async({page})=>{
+    test.beforeEach(async({page})=>{
         await page.goto("https://tutorialsninja.com/demo/");
         await page.waitForLoadState('networkidle');
     })
@@ -47,7 +47,7 @@ test.describe("Playwright Keyboard Test", ()=> {
         await currencyDropdown.focus();
         await page.keyboard.press('Enter', { delay: 500 });
         await page.keyboard.press('Tab');
-        await page.keyboard.press('ArrowDown');
+        await page.keyboard.press('Tab');
         await page.keyboard.press('Enter');
 
     })
