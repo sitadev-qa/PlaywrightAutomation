@@ -12,8 +12,8 @@
     "runtestinheaded": "npx playwright test --headed",
     "runtestinparallel": "npx playwright test --workers=4",
     "runtestwithreporter": "npx playwright test --reporter=html",
-    "runsmoketestcase":"npx playwright test --grep @smoke",
-    "runregressionexcludesmoke":"npx playwright test --grep @regression --grep-invert @smoke"
+    "runsmoketestcase": "npx playwright test --grep @smoke",
+    "runregressionexcludesmoke": "npx playwright test --grep @regression --grep-invert @smoke"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,10 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.3"
+    "@types/node": "^25.3.3",
+    "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "allure": "^3.3.1"
   }
 }
