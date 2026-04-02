@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -47,6 +47,10 @@
       [
         "line",
         null
+      ],
+      [
+        "D:\\PlaywrightAutomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -57,94 +61,73 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.58.2",
     "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "example.spec.js",
-      "file": "example.spec.js",
+      "title": "TC20WebTables2Playwright.spec.js",
+      "file": "TC20WebTables2Playwright.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Static Web Table Validation",
+          "file": "TC20WebTables2Playwright.spec.js",
+          "line": 2,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Assert the value of BookName",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2915,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-04-01T11:33:32.299Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": []
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4436,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Author Name is -  Amit\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-02T11:54:23.697Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "0d7bb4c90d3d3829e53f-1e0c6d61b8318b268946",
+              "file": "TC20WebTables2Playwright.spec.js",
+              "line": 27,
+              "column": 9
             }
-          ],
-          "id": "dd9b2edffe9b7501040c-fe3fbe2603922999b144",
-          "file": "example.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3498,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-04-01T11:33:32.292Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "dd9b2edffe9b7501040c-18206e4c4b88f5cba6b3",
-          "file": "example.spec.js",
-          "line": 11,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-01T11:33:25.282Z",
-    "duration": 12260.747,
-    "expected": 2,
+    "startTime": "2026-04-02T11:54:16.791Z",
+    "duration": 12220.076999999583,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

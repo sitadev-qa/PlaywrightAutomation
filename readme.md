@@ -241,3 +241,9 @@ Admin -
 
 -> Organization - Try for 10 TCs.
 
+
+Installation
+- allure - https://www.npmjs.com/package/allure
+- allure-playwright - https://www.npmjs.com/package/allure-playwright
+- playwright reporter - https://playwright.dev/docs/test-reporters
+

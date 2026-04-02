@@ -12,9 +12,7 @@ test('has title', async ({ page }) => {
     await allure.issue("https://github.com/allure-framework/allure-js/issues/331", "ISSUE-331");
     await allure.owner("eroshenkoam");
     await allure.parameter("browser", "chrome");
-
-  await page.goto('https://playwright.dev/');
-
+    await page.goto('https://playwright.dev/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
