@@ -68,21 +68,21 @@
   },
   "suites": [
     {
-      "title": "TC20WebTables2Playwright.spec.js",
-      "file": "TC20WebTables2Playwright.spec.js",
+      "title": "LambaTestProject\\lambdaDemo.spec.js",
+      "file": "LambaTestProject/lambdaDemo.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Static Web Table Validation",
-          "file": "TC20WebTables2Playwright.spec.js",
-          "line": 2,
+          "title": "🔐 LOGIN MODULE - Complete Test Coverage",
+          "file": "LambaTestProject/lambdaDemo.spec.js",
+          "line": 43,
           "column": 6,
           "specs": [
             {
-              "title": "Assert the value of BookName",
-              "ok": true,
+              "title": "TC01 - Verify user can navigate to login page",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -93,30 +93,64 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 23,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4436,
-                      "errors": [],
-                      "stdout": [
+                      "status": "timedOut",
+                      "duration": 31782,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
                         {
-                          "text": "Author Name is -  Amit\n"
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js",
+                            "column": 58,
+                            "line": 56
+                          },
+                          "message": "Error: locator.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'My Account' })\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"icon-left both nav-link\" href=\"https://ecommerce-playground.lambdatest.io/index.php?route=account/account\">…</a>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is visible and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - element is outside of the viewport\u001b[22m\n\u001b[2m     - retrying hover action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n\n\u001b[0m \u001b[90m 54 |\u001b[39m   \u001b[36mconst\u001b[39m navigateToLoginPage \u001b[33m=\u001b[39m \u001b[36masync\u001b[39m (page) \u001b[33m=>\u001b[39m {\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Hover over My Account to open dropdown\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'My Account'\u001b[39m })\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Wait for dropdown and click Login\u001b[39m\n \u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at navigateToLoginPage (D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:56:58)\u001b[22m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:75:13\u001b[22m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:74:16\u001b[22m"
                         }
                       ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-02T11:54:23.697Z",
+                      "steps": [
+                        {
+                          "title": "Navigate to login page",
+                          "duration": 20939,
+                          "error": {
+                            "message": "Error: locator.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'My Account' })\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"icon-left both nav-link\" href=\"https://ecommerce-playground.lambdatest.io/index.php?route=account/account\">…</a>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is visible and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - element is outside of the viewport\u001b[22m\n\u001b[2m     - retrying hover action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n",
+                            "stack": "Error: locator.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'My Account' })\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"icon-left both nav-link\" href=\"https://ecommerce-playground.lambdatest.io/index.php?route=account/account\">…</a>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m      - element is visible and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - element is outside of the viewport\u001b[22m\n\u001b[2m    - retrying hover action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible and stable\u001b[22m\n\u001b[2m       - element is visible and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - element is outside of the viewport\u001b[22m\n\u001b[2m     - retrying hover action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible and stable\u001b[22m\n\u001b[2m    - element is visible and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\n    at navigateToLoginPage (D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:56:58)\n    at D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:75:13\n    at D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js:74:16",
+                            "location": {
+                              "file": "D:\\PlaywrightAutomation\\tests\\LambaTestProject\\lambdaDemo.spec.js",
+                              "column": 58,
+                              "line": 56
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 54 |\u001b[39m   \u001b[36mconst\u001b[39m navigateToLoginPage \u001b[33m=\u001b[39m \u001b[36masync\u001b[39m (page) \u001b[33m=>\u001b[39m {\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Hover over My Account to open dropdown\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'My Account'\u001b[39m })\u001b[33m.\u001b[39mhover()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m     \u001b[90m// Wait for dropdown and click Login\u001b[39m\n \u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-04-03T12:23:03.270Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\PlaywrightAutomation\\test-results\\LambaTestProject-lambdaDem-574d6--can-navigate-to-login-page-chromium\\error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "0d7bb4c90d3d3829e53f-1e0c6d61b8318b268946",
-              "file": "TC20WebTables2Playwright.spec.js",
-              "line": 27,
-              "column": 9
+              "id": "ca38e4b0589778430ba1-43867a41ca28e8fe8015",
+              "file": "LambaTestProject/lambdaDemo.spec.js",
+              "line": 73,
+              "column": 7
             }
           ]
         }
@@ -125,11 +159,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-02T11:54:16.791Z",
-    "duration": 12220.076999999583,
-    "expected": 1,
+    "startTime": "2026-04-03T12:22:53.779Z",
+    "duration": 44774.20700000001,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
