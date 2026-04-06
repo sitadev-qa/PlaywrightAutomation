@@ -208,7 +208,7 @@ test.describe('🔐 LOGIN MODULE - Complete Test Coverage', () => {
 
   test('TC10 - Verify login page elements are visible', async ({ page }) => {
     await test.step('Navigate to login page', async () => {
-      await navigateToLoginPage(page);
+      await page.getByRole('link', { name: 'My Account' }).click({ force: true });
     });
     
     await test.step('Verify all required elements', async () => {
