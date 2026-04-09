@@ -68,21 +68,21 @@
   },
   "suites": [
     {
-      "title": "TC22ViewPortPlaywright.spec.js",
-      "file": "TC22ViewPortPlaywright.spec.js",
+      "title": "TC24PlaywrightPagination2.spec.js",
+      "file": "TC24PlaywrightPagination2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "View ports in playwright",
-          "file": "TC22ViewPortPlaywright.spec.js",
+          "title": "Pagination in Nationality Page - OrangeHRM",
+          "file": "TC24PlaywrightPagination2.spec.js",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "ViewPort - 1",
-              "ok": true,
+              "title": "TC04 - Navigate to last page using Next button",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -93,128 +93,64 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 25,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 8580,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 34768,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:25:10",
+                        "location": {
+                          "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
+                          "column": 10,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// 🔹 Login + Navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m \u001b[33mPASSWORD\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
+                            "column": 10,
+                            "line": 25
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// 🔹 Login + Navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m \u001b[33mPASSWORD\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:25:10\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
+                            "column": 20,
+                            "line": 34
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 32 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(selectors\u001b[33m.\u001b[39madminMenu)\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(selectors\u001b[33m.\u001b[39mnationalityMenu)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[90m// 🔹 Helper: Get total records\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:34:20\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-06T12:07:00.457Z",
+                      "startTime": "2026-04-09T12:11:39.595Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\PlaywrightAutomation\\test-results\\TC24PlaywrightPagination2--24f69-last-page-using-Next-button-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
+                        "column": 10,
+                        "line": 25
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "b55075b65a553834d261-1ce00f7e7e71a6688447",
-              "file": "TC22ViewPortPlaywright.spec.js",
-              "line": 5,
+              "id": "629dc9664968a5b1ac84-415daa861a6904301ad2",
+              "file": "TC24PlaywrightPagination2.spec.js",
+              "line": 90,
               "column": 9
-            },
-            {
-              "title": "ViewPort - iPhone 12",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4952,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-06T12:07:10.762Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b55075b65a553834d261-b1d27d6fd3e1444f3da3",
-              "file": "TC22ViewPortPlaywright.spec.js",
-              "line": 16,
-              "column": 13
-            },
-            {
-              "title": "ViewPort - Pixel 5",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4296,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-06T12:07:18.678Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b55075b65a553834d261-48fba71dad83af986141",
-              "file": "TC22ViewPortPlaywright.spec.js",
-              "line": 16,
-              "column": 13
-            },
-            {
-              "title": "ViewPort - iPad Pro 11",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4059,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-06T12:07:25.892Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b55075b65a553834d261-38df087e03972eb340ff",
-              "file": "TC22ViewPortPlaywright.spec.js",
-              "line": 16,
-              "column": 13
             }
           ]
         }
@@ -223,11 +159,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-06T12:06:55.842Z",
-    "duration": 35268.155,
-    "expected": 4,
+    "startTime": "2026-04-09T12:11:30.631Z",
+    "duration": 50504.98099999968,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
