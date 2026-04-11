@@ -68,21 +68,21 @@
   },
   "suites": [
     {
-      "title": "TC24PlaywrightPagination2.spec.js",
-      "file": "TC24PlaywrightPagination2.spec.js",
+      "title": "OrangeHRMSPageObjectModel\\Login\\login.spec.js",
+      "file": "OrangeHRMSPageObjectModel/Login/login.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Pagination in Nationality Page - OrangeHRM",
-          "file": "TC24PlaywrightPagination2.spec.js",
-          "line": 3,
+          "title": "Login Functionality of OrangeHRMS Application",
+          "file": "OrangeHRMSPageObjectModel/Login/login.spec.js",
+          "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "TC04 - Navigate to last page using Next button",
-              "ok": false,
+              "title": "TC - 01 - Verify Login with Valid Credentials",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -93,63 +93,29 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 25,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 34768,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:25:10",
-                        "location": {
-                          "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
-                          "column": 10,
-                          "line": 25
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// 🔹 Login + Navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m \u001b[33mPASSWORD\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
+                      "status": "passed",
+                      "duration": 13455,
+                      "errors": [],
+                      "stdout": [
                         {
-                          "location": {
-                            "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
-                            "column": 10,
-                            "line": 25
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[90m// 🔹 Login + Navigation\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mBASE_URL\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mUSERNAME\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(selectors\u001b[33m.\u001b[39mpassword\u001b[33m,\u001b[39m \u001b[33mPASSWORD\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:25:10\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
-                            "column": 20,
-                            "line": 34
-                          },
-                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 32 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(selectors\u001b[33m.\u001b[39madminMenu)\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(selectors\u001b[33m.\u001b[39mnationalityMenu)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[90m// 🔹 Helper: Get total records\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js:34:20\u001b[22m"
+                          "text": "Is Dashboard Visible:  \u001b[33mtrue\u001b[39m\n"
                         }
                       ],
-                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-09T12:11:39.595Z",
+                      "startTime": "2026-04-11T03:11:50.963Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\PlaywrightAutomation\\test-results\\TC24PlaywrightPagination2--24f69-last-page-using-Next-button-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "D:\\PlaywrightAutomation\\tests\\TC24PlaywrightPagination2.spec.js",
-                        "column": 10,
-                        "line": 25
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "629dc9664968a5b1ac84-415daa861a6904301ad2",
-              "file": "TC24PlaywrightPagination2.spec.js",
-              "line": 90,
+              "id": "bf33831a73b55698b389-97e516e569db8ec3cac1",
+              "file": "OrangeHRMSPageObjectModel/Login/login.spec.js",
+              "line": 7,
               "column": 9
             }
           ]
@@ -159,11 +125,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-09T12:11:30.631Z",
-    "duration": 50504.98099999968,
-    "expected": 0,
+    "startTime": "2026-04-11T03:11:40.733Z",
+    "duration": 24577.108000000007,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

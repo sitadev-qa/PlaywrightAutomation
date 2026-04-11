@@ -9,7 +9,7 @@
     "runtestinchrome": "npx playwright test --browser chrome",
     "runtestinfirefox": "npx playwright test --browser firefox",
     "runtestinsafari": "npx playwright test --browser webkit",
-    "runtestinheaded": "npx playwright test --headed",
+    "runtestinheaded": "npx playwright test --headed chrome",
     "runtestinparallel": "npx playwright test --workers=4",
     "runtestwithreporter": "npx playwright test --reporter=html",
     "runsmoketestcase": "npx playwright test --grep @smoke",
