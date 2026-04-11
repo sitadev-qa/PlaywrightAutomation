@@ -20,7 +20,7 @@ export class JobTitlesPage {
     await this.jobTitlesMenuItem.click();
   }
 
-  async addJobTitle({ title, description, specFile, noteFile, note }) {
+  async addJobTitle({ title, description, note, specFile, noteFile }) {
     await this.addButton.click();
     await this.titleInput.fill(title);
     await this.descriptionInput.fill(description);
@@ -37,6 +37,7 @@ export class JobTitlesPage {
 
     await this.noteInput.fill(note);
     await this.saveButton.click();
+    await this.page.waitForLoadState('networkidle');
   }
 
   async editJobTitle(rowLocator, { description, note }) {

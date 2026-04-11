@@ -1,7 +1,7 @@
 export class NavigationPage {
   constructor(page) {
     this.page = page;
-    this.userProfileMenu = page.locator('span').filter({ hasText: 'mandag4 userg4g' });
+    this.userProfileMenu = page.locator('[class="oxd-userdropdown-tab"]');
     this.logoutMenuItem = page.getByRole('menuitem', { name: 'Logout' });
   }
 

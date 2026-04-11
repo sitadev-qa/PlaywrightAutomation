@@ -75,13 +75,13 @@
       "specs": [],
       "suites": [
         {
-          "title": "Job Module - Job Titles",
+          "title": "Job Module - Job Titles (E2E)",
           "file": "OrangeHRMSPageObjectModel/Admin/Job/jobManagement.spec.js",
-          "line": 8,
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "should add a new job title successfully",
+              "title": "should add, edit and delete the same job title",
               "ok": false,
               "tags": [],
               "tests": [
@@ -93,79 +93,49 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 17,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 60030,
+                      "status": "failed",
+                      "duration": 27635,
                       "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:13:8",
+                        "message": "Error: locator.fill: value: expected string, got undefined",
+                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at JobTitlesPage.editJobTitle (D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:46:26)\n    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:60:5",
                         "location": {
-                          "file": "D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js",
-                          "column": 8,
-                          "line": 13
+                          "file": "D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js",
+                          "column": 26,
+                          "line": 46
                         },
-                        "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mlet\u001b[39m navigationPage\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     jobTitlesPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mJobTitlesPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     navigationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mNavigationPage\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m rowLocator\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdescriptionInput\u001b[33m.\u001b[39mfill(description)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnoteInput\u001b[33m.\u001b[39mfill(note)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m   }\n \u001b[90m 49 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js",
-                            "column": 8,
-                            "line": 13
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mlet\u001b[39m navigationPage\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     jobTitlesPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mJobTitlesPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     navigationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mNavigationPage\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:13:8\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js",
-                            "column": 8,
-                            "line": 22
-                          },
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"afterEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 20 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m   test\u001b[33m.\u001b[39mafterEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m navigationPage\u001b[33m.\u001b[39mlogout()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:22:8\u001b[22m"
-                        },
-                        {
-                          "location": {
                             "file": "D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js",
-                            "column": 24,
-                            "line": 19
+                            "column": 26,
+                            "line": 46
                           },
-                          "message": "Error: locator.click: locator.click: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39m..\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39madminMenuLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjobMenu\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjobTitlesMenuItem\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m   }\n \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[2m    at JobTitlesPage.navigate (D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:19:24)\u001b[22m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:19:5\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js",
-                            "column": 24,
-                            "line": 19
-                          },
-                          "message": "Error: locator.click: locator.click: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39m..\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m   \u001b[36masync\u001b[39m navigate() {\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39madminMenuLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjobMenu\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mjobTitlesMenuItem\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m   }\n \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[2m    at JobTitlesPage.navigate (D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:19:24)\u001b[22m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:19:5\u001b[22m"
+                          "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[90m   at \u001b[39m..\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m rowLocator\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdescriptionInput\u001b[33m.\u001b[39mfill(description)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnoteInput\u001b[33m.\u001b[39mfill(note)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msaveButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m   }\n \u001b[90m 49 |\u001b[39m\u001b[0m\n\u001b[2m    at JobTitlesPage.editJobTitle (D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js:46:26)\u001b[22m\n\u001b[2m    at D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js:60:5\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-11T05:57:29.048Z",
+                      "startTime": "2026-04-11T13:13:56.045Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\PlaywrightAutomation\\test-results\\OrangeHRMSPageObjectModel--0ac66--new-job-title-successfully-chromium\\error-context.md"
-                        }
-                      ],
+                      "attachments": [],
                       "errorLocation": {
-                        "file": "D:\\PlaywrightAutomation\\tests\\OrangeHRMSPageObjectModel\\Admin\\Job\\jobManagement.spec.js",
-                        "column": 8,
-                        "line": 13
+                        "file": "D:\\PlaywrightAutomation\\pages\\OrangeHRMSPages\\Admin\\JobTitlesPage.js",
+                        "column": 26,
+                        "line": 46
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "2391a60e9764f7781e2c-7b3a479fca455e1a4a62",
+              "id": "2391a60e9764f7781e2c-622a4a1a59859efd9b4e",
               "file": "OrangeHRMSPageObjectModel/Admin/Job/jobManagement.spec.js",
-              "line": 26,
+              "line": 30,
               "column": 7
             }
           ]
@@ -175,8 +145,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-11T05:57:20.676Z",
-    "duration": 69755.14299999923,
+    "startTime": "2026-04-11T13:13:51.944Z",
+    "duration": 33036.59300000011,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
