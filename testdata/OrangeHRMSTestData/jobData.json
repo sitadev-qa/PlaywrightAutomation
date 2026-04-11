@@ -1,0 +1,17 @@
+{
+  "credentials": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "newJobTitle": {
+    "title": "Test Job Title",
+    "description": "Test Job Title Description",
+    "specFile": "",
+    "noteFile": "",
+    "note": "Add Notes"
+  },
+  "editJobTitle": {
+    "description": "Test Job Title Description Updated",
+    "note": "Add Notes Updated"
+  }
+}

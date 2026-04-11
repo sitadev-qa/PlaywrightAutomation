@@ -3,7 +3,6 @@ import {LoginPage} from "../../../pages/OrangeHRMSPages/loginpage"
 
 test.describe("Login Functionality of OrangeHRMS Application", () =>{
 
-
     test('TC - 01 - Verify Login with Valid Credentials', async ({page}) =>{
         const loginPage = new LoginPage(page);
         await loginPage.navigateToLoginPage();
@@ -11,8 +10,7 @@ test.describe("Login Functionality of OrangeHRMS Application", () =>{
         await page.waitForLoadState('networkidle');
         const isDashboardVisible = await loginPage.validateHomePageDashboard();
         console.log("Is Dashboard Visible: ", isDashboardVisible);
-        expect(isDashboardVisible).toBeTruthy();
-        
+        expect(isDashboardVisible).toBeTruthy();    
     })
 
 })

@@ -1,0 +1,17 @@
+{
+  "credentials": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "newUser": {
+    "role": "Admin",
+    "employeeHint": "d",
+    "employeeOption": "A8DCo 4Ys 010Z",
+    "status": "Enabled",
+    "username": "fsfsfsqws",
+    "password": "@!Game149"
+  },
+  "editUser": {
+    "status": "Disabled"
+  }
+}
