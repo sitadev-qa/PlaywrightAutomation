@@ -4,11 +4,11 @@
     "password": "admin123"
   },
   "newJobTitle": {
-    "title": "Test Job Title",
+    "title": "Test QA Title",
     "description": "Test Job Title Description",
+    "note": "Add Notes",
     "specFile": "",
-    "noteFile": "",
-    "note": "Add Notes"
+    "noteFile": ""
   },
   "editJobTitle": {
     "description": "Test Job Title Description Updated",
